@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Addition
+Comment=A Python script to add two numbers
+Exec=addition.py %u
+Icon=addition
+Terminal=true
+Type=Application
+Categories=Utility;

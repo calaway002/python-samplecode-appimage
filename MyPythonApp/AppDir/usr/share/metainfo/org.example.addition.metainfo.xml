@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="console-application">
+  <id>org.example.addition</id>
+  
+  <name>Addition</name>
+  <summary>Add two values using a Python script</summary>
+  
+  <metadata_license>MIT</metadata_license>
+  <project_license>Vim</project_license>
+  
+  <description>
+    <p>
+      This Python script provides a simple command-line utility to add two values. 
+      Users can input two numerical values as arguments, and the script will calculate 
+      and display their sum. This tool is useful for quick calculations directly from 
+      the terminal, demonstrating basic argument parsing and arithmetic operations in Python.
+    </p>
+  </description>
+  
+  <icon type="stock">addition</icon>
+  
+  <categories>
+    <category>Development</category>
+    <category>Building</category>
+  </categories>
+  
+  <provides>
+    <binary>addition.py</binary>
+  </provides>
+</component>

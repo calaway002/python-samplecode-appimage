@@ -1,0 +1,27 @@
+version: 1
+AppDir:
+  path: ./AppDir
+  app_info:
+    id: com.example.pythonapp
+    name: AdditionApp
+    version: '1.0.0'
+    exec: /usr/bin/addition.py
+    icon: python
+
+  # Define the runtime dependencies
+  apt:
+    arch: amd64
+    sources:
+      - sourceline: 'deb [arch=amd64] http://archive.ubuntu.com/ubuntu focal main universe'
+    include:
+      - python3
+      - python3-pip
+
+  # Files to be included in the AppImage
+  files:
+    include:
+      - addition.py
+      - com.example.pythonapp.desktop
+
+AppImage:
+  arch: x86_64

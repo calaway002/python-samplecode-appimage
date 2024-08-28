@@ -1,0 +1,4 @@
+#!/bin/bash
+HERE="$(dirname "$(readlink -f "${0}")")"
+echo "Running from ${HERE}/usr/bin/addition.py"
+exec "${HERE}/usr/bin/addition.py" "$@"
